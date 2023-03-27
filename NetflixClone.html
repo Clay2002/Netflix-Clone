@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+
+
+<style>
+     #html {
+
+        height: 100%;
+     
+    }
+    #body {
+        min-height: 400%;
+    
+    }
+  
+    #header{
+display: grid;       
+ padding: 25px;
+    }
+
+    #new{
+
+background-color: rgb(222, 4, 4);
+position:absolute;
+margin-left: 540px;
+padding: 3px;
+border-radius: 10px;
+color: white;
+font-weight: bold;
+font-size: 15px
+
+
+
+    }
+
+    #learnmore{
+    
+        color: rgb(63, 63, 203);
+        position:absolute;
+        margin-left: 850px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    #plans{
+        margin-left: 600px;
+        font-size: 22px;
+        
+     
+    }
+
+    #img{
+
+
+        width: 1425px;
+    }
+ 
+
+#sign{
+
+
+    color: rgb(80, 88, 88);
+    background-color: rgb(80, 88, 88);
+    height: 9px;
+}
+
+
+
+#section1{
+
+position: relative;
+
+}
+#section2{
+
+position: relative;
+
+}
+
+#section3{
+
+position: relative;
+
+}
+#section4{
+
+position: relative;
+
+}
+
+
+#section4-img{
+
+position:absolute;
+height: 320px;
+padding-left: 280px;
+padding-top: 10px;
+}
+
+
+#section3-img{
+
+    position:absolute;
+height: 320px;
+padding-left: 800px;
+padding-top: 40px;
+}
+
+
+
+#section2-img{
+
+position:absolute;
+height: 320px;
+padding-left: 280px;
+padding-top: 40px;
+}
+    
+#section1-img{
+
+position:absolute;
+height: 320px;
+padding-left: 800px;
+padding-top: 40px;
+
+
+    
+}
+
+
+#enjoy{
+
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 50px;
+    padding-left: 280px;
+    padding-bottom: 20px;
+    padding-top: 130px;
+}
+
+#enjoy1{
+
+color: white;
+    background-color: black;
+    
+    font-size: 25px;
+    padding-left: 280px;
+    padding-bottom: 100px;
+}
+
+
+#line{
+
+
+color: rgb(80, 88, 88);
+background-color: rgb(80, 88, 88);
+height: 9px;
+}
+
+#text{
+
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 100px;
+    padding-left: 280px;
+}
+
+#text2{
+    color: white;
+    background-color: black;
+    padding-top: 20px;
+    font-size: 25px;
+    padding-left: 280px;
+    padding-bottom: 100px;
+}
+#line2{
+
+
+color: rgb(80, 88, 88);
+background-color: rgb(80, 88, 88);
+height: 9px;
+}
+#line3{
+
+
+color: rgb(80, 88, 88);
+background-color: rgb(80, 88, 88);
+height: 9px;
+}
+
+#text12{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 100px;
+    padding-left: 800px;
+
+
+}
+
+#text13{
+    background-color: black;
+    color: white;
+    padding-left: 800px;
+
+    font-size: 25px;
+    padding-bottom: 100px;
+
+
+}
+#text40{
+    padding-top: 100px;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 800px;
+}
+
+
+#text41{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    padding-left: 800px;
+    padding-bottom: 100px;
+}
+
+
+#line4{
+
+
+color: rgb(80, 88, 88);
+background-color: rgb(80, 88, 88);
+height: 9px;
+}
+
+
+#questions {
+   
+    font-size: 50px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 35px;
+}
+
+
+
+#list1{
+
+    border: gray solid 4px;
+    margin-left: 325px;
+    margin-right: 325px;
+    color: white;
+    background-color: rgb(49, 47, 47);
+    font-size: 35px;
+    padding-right: 500px;
+    margin-top:12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style-type: none
+
+}
+#list2{
+
+border: gray solid 4px;
+margin-left: 325px;
+margin-right: 325px;
+padding-right: 500px;
+color: white;
+background-color: rgb(49, 47, 47);
+font-size: 35px;
+margin-top:12px;
+padding-top: 10px;
+padding-bottom: 10px;
+list-style-type: none;
+white-space: nowrap;
+
+}
+
+#list3{
+
+border: gray solid 4px;
+margin-left: 325px;
+margin-right: 325px;
+padding-right: 500px;
+color: white;
+font-size: 35px;
+background-color: rgb(49, 47, 47);
+margin-top:12px;
+padding-top: 10px;
+padding-bottom: 10px;
+list-style-type: none;
+white-space: nowrap;
+
+}
+
+
+#list4{
+
+border: gray solid 4px;
+margin-left: 325px;
+margin-right: 500px;
+padding-right: 766px;
+color: white;
+font-size: 35px;
+background-color: rgb(49, 47, 47);
+margin-top:12px;
+padding-top: 10px;
+padding-bottom: 10px;
+list-style-type: none;
+white-space: nowrap;
+}
+
+
+
+#list5{
+
+border: gray solid 4px;
+margin-left: 325px;
+margin-right: 325px;
+padding-right: 200px;
+color: white;
+font-size: 35px;
+background-color: rgb(49, 47, 47);
+margin-top:12px;
+padding-top: 10px;
+padding-bottom: 10px;
+list-style-type: none
+}
+
+#list6{
+
+border: gray solid 4px;
+margin-left: 325px;
+margin-right: 325px;
+padding-right: 50px;
+color: white;
+font-size: 35px;
+background-color: rgb(49, 47, 47);
+margin-top:12px;
+padding-top: 10px;
+padding-bottom: 10px;
+list-style-type: none
+}
+
+#list7{
+margin-top:12px;
+border: gray solid 4px;
+margin-left: 325px;
+margin-right: 325px;
+padding-right: 50px;
+color: white;
+font-size: 35px;
+background-color: rgb(49, 47, 47);
+padding-top: 10px;
+padding-bottom: 10px;
+list-style-type: none;
+}
+
+
+
+#moretext{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+#both{
+    background-color: black;
+
+}
+#GetStarted{
+
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-left: 25px;
+    width: 140px;
+    height: 20px;
+    font-weight: bold;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    margin-left: 800px;
+
+    
+
+
+}
+
+#input{
+
+    margin-left: 580px;
+    position: absolute;
+    padding-top: 18px;
+    padding-left: 68px;
+
+}
+
+
+#line5{
+
+
+color: rgb(80, 88, 88);
+background-color: rgb(80, 88, 88);
+height: 9px;
+}
+
+#call{
+
+color: rgb(170, 168, 168);
+text-decoration: underline;
+background-color: #000000;
+padding-left: 160px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #000000;
+  padding: 10px;
+  color: rgb(170, 168, 168);
+  text-decoration: underline;
+
+
+}
+
+.grid-item{
+  padding: 5px;
+  font-size: 15px;
+  padding-left: 150px;
+
+    
+}
+
+#textpic{
+
+
+    position: relative;
+    
+}
+
+#netflixlogo{
+
+  position: absolute;
+  bottom: 700px;
+  right: 1100px;
+  font-weight: bold;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: red;
+  font-size: 50px;
+}
+
+#signin{
+  position: absolute;
+  bottom: 700px;
+  right: 100px;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: bold;
+  background-color: red;
+  border-radius: 5px;
+
+}
+#titletext{
+
+color: white;
+  position: absolute;
+  bottom: 425px;
+  right: 270px;
+  font-weight: bold;
+  font-size: 50px;
+  
+}
+#titletext-2{
+
+color: white;
+  position: absolute;
+  bottom: 380px;
+  right: 500px;
+  font-size: 30px;
+}
+#titletext-3{
+
+color: white;
+  position: absolute;
+  bottom: 700px;
+  bottom: 350px;
+  right: 487px;
+}
+
+
+
+
+#english{
+
+border: solid black 2px;
+border-radius: 5px;
+padding-top: 2px;
+padding-bottom: 2px;
+padding-right: 5px;
+padding-left: 5px;
+  position: absolute;
+  bottom: 700px;
+  right: 250px;
+  font-weight: bold;
+  color: white;
+
+
+}
+
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+    <div id = "header">
+    <div id = "new">NEW!</div>
+    <div id = "learnmore">Learn More > </div>
+    <div id = "plans">Plans now start at <b>$6.99.</b></div>
+
+</div>
+  
+<div id ="textpic">
+
+<img id = "img" src = https://assets.nflxext.com/ffe/siteui/vlv3/5523db5a-e2b2-497f-a88b-61f175c3dbad/28ef60c5-74bc-46ba-b4e4-84c6e431eef6/US-en-20230306-popsignuptwoweeks-perspective_alpha_website_large.jpg>
+
+<div id = "signin">Sign in</div>
+<div id = "netflixlogo">NETFLIX</div>
+
+<div id ='english'>English</div>
+
+<div id = "titletext">Unlimited movies, TV shows, and more.</div>
+<div id = "titletext-2">Watch anywhere. Cancle anytime.</div>
+<div id = "titletext-3">Ready to watch? Enter your email to create or restart your membership.</div>
+
+</div>
+
+
+
+
+<div id = "sign"></div>
+
+
+<div id = "section1">
+    <img id = "section1-img" src =tv.png>
+<div id = "enjoy">Enjoy on your TV.</div>
+
+<div id = "enjoy1">Watch on smart TV's, Playstation Xbox, <br>Cromecast, Apple TV, Blu-ray players, and<br> more.</div>
+
+
+
+</div>
+
+
+
+
+<div id = "line"></div>
+
+
+<div id = "section2">
+
+<img id = "section2-img" src =device-pile.png>
+<div id ="text12">Watch everwhere.</div>
+<div id = "text13">Stream unlimited movies and TV shows on <br> your phone, tablet, laptop, and TV without <br> paying more.</div>
+
+</div>
+
+
+
+<div id = "line3"></div>
+
+<div id = "section3">
+
+<img id = "section3-img" src =AAAABfpnX3dbgjZ-Je8Ax3xn0kXehZm_5L6-xe6YSTq_ucht9TI5jwDMqusWZKNYT8DfGudD0_wWVVTFLiN2_kaQJumz2iivUWbIbAtF.png>
+<div id = "text">Create Profiles for kids.</div>
+<div id = "text2">Send kids on adventures with their favorite <br>characters in a space made just for them- <br>free with your membership.</div>
+
+
+</div>
+
+<div id = "line2"></div>
+
+
+<div id = "section4">
+
+<img id = "section4-img" src =mobile-0819.jpg>
+<div id = "text40">Download your shows <br> to watch offline.</div>
+<div id = "text41">Only available on ad-free plans.</div>
+
+</div>
+
+<div id = "line4"></div>
+
+
+
+<div id = "questions">Frequently Asked Questions
+
+
+<li id = "list1">What is Netflix?</li>
+<li id = "list2">How much does Netflix cost?</li>
+<li id = "list3">What's differnt on ad ad-supported plan?</li>
+<li id = "list4">Where can I watch?</li>
+<li id = "list5">How do I cancle?</li>
+<li id = "list6">What can I watch on Netflix?</li>
+<li id = "list7">Is Netflix good for kids?</li>
+
+
+</div>
+
+
+<div id = "moretext">Ready to watch? Enter your email to create or restart your membership. </div>
+
+
+<div id ="both">
+
+
+<input id ="input">
+
+<div id ="GetStarted" >Get Started > </div>
+
+</div>
+
+
+<div id = "line5"></div>
+
+<div id ="call">Questions? Call 1-844-505-2993</div>
+
+
+
+
+<div class="grid-container">
+    <div class="grid-item">FAQ</div>
+    <div class="grid-item">Gift Card Terms</div>
+    <div class="grid-item">Help Center</div>
+    <div class="grid-item">Account</div>
+    <div class="grid-item">Media Center</div>
+    <div class="grid-item">Investor Relations</div>
+    <div class="grid-item">Jobs</div>
+    <div class="grid-item">Netflix Shop</div>
+    <div class="grid-item">Redeem Gift Cards</div>
+    <div class="grid-item">Buy Gift Cards</div>
+    <div class="grid-item">Ways To Watch</div>
+    <div class="grid-item">Terms Of Use</div>
+    <div class="grid-item">Privacy</div>
+    <div class="grid-item">Cookie Preferences</div>
+    <div class="grid-item">Corporate Information</div>
+    <div class="grid-item">Contact Us</div>
+    <div class="grid-item">Speed Test</div>
+    <div class="grid-item">Legal Notices</div>
+    <div class="grid-item">Only On Netflix</div>
+    <div class="grid-item">Do Not Sell or Share My Personal Information</div>
+
+    
+
+  </div>
+  
+
+
+
+</body>
+</html>
